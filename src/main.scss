@@ -68,6 +68,10 @@ p {
 
       .grid__section--button {
         color: $cyan;
+
+        &:active {
+          color: $grey;
+        }
       }
     }
 
@@ -76,6 +80,10 @@ p {
 
       .grid__section--button {
         color: $darkCyan;
+
+        &:active {
+          color: $grey;
+        }
       }
     }
 
@@ -95,6 +103,17 @@ p {
       border-radius: 2rem;
       font-size: 1rem;
       color: $orange;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: transparent;
+        cursor: pointer;
+        border: solid $grey 2px;
+        color: $grey;
+      }
     }
   }
 }
